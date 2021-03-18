@@ -8,36 +8,36 @@ get_header();
 
         <div id = "content-card" class = "card">
             <div class = "card-body">
-            <form id = "add_new_note" action = "myfunctions/add_note" method = "post">
-                <div class = "form">
-                        <div class = "form-group">
-                            <input class = "form-control form-control" type = "text" name = "note_title" placeholder = "Note title">
-                        </div>
-                        <div class = "form-group">
-                            <input class = "form-control" type="text-area" name = "note_content" placeholder="Note">
-                        </div>
-                        
-                        <div class = "form-group">
-                            <select class = "form-control" name = "category_id">
-                                <option value = "7">Notes with art galleries and platforms</option>
-                                <option value = "8">Notes with books</option>
-                                <option value = "5">Notes with films, TV series, anime etc</option>
-                                <option value = "9">Notes with lectures</option>
-                                <option value = "6">Notes with social media, blogs, sites etc</option>
-                                <option value = "10">Other notes</option>
-                            </select>
-                        </div>
-                   
-                    <div class = "form-group row">
-                        <div class = "col-10">
-                            <input type = "password" class="form-control form-control-sm" type = "text" name = "password" placeholder = "password">
-                        </div>
-                        <div class = "col-2">
-                            <button class = "btn btn-secondary btn-sm" type = "submit">Add note</button>
+                <form class = "add_new_note">
+                    <div class = "form">
+                            <div class = "form-group">
+                                <input id = "input_note_title_id" class = "form-control form-control" type = "text" name = "note_title" placeholder = "Note title">
+                            </div>
+                            <div class = "form-group">
+                                <input id = "input_note_content_id" class = "form-control" type="text-area" name = "note_content" placeholder="Note">
+                            </div>
+                            
+                            <div class = "form-group">
+                                <select class = "form-control" name = "db_id_category">
+                                    <option value = "10">Other notes</option>
+                                    <option value = "9">Notes with lectures</option>
+                                    <option value = "7">Notes with art galleries and platforms</option>
+                                    <option value = "8">Notes with books</option>
+                                    <option value = "5">Notes with films, TV series, anime etc</option>                                    
+                                    <option value = "6">Notes with social media, blogs, sites etc</option>
+                                </select>
+                            </div>
+                    
+                        <div class = "form-group row">
+                            <div class = "col-10">
+                                <input id = "input_note_password_id" type = "password" class="form-control form-control-sm" type = "text" name = "password" placeholder = "password">
+                            </div>
+                            <div class = "col-2">
+                                <button class = "btn btn-secondary btn-sm" type = "submit">Add note</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
             </div>
         </div>
 

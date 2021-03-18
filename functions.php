@@ -2,6 +2,11 @@
 function mytheme_scripts(){
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js');
+
+    //wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.6.0.min.js');
+
+    wp_enqueue_script('myjs', get_template_directory_uri() . '/js/myjs.js');
     wp_enqueue_style('mycss', get_template_directory_uri(). '/css/mycss.css');
 }
 
@@ -29,5 +34,7 @@ add_action('widgets_init', 'reg_sidebar');
 require('myfunctions/filter_header_menu.php');
 
 require('myfunctions/include_template_subcategory_notes.php');
+
+require('myfunctions/add_note.php');
 
 ?>
