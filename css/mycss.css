@@ -4,8 +4,8 @@
     margin-left: 2%;
 }
 
-header {
-    padding-bottom: 5%;
+#headerNavBar {
+    padding-bottom: 80px;
 }
 
 #content{
@@ -45,4 +45,62 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     
+}
+
+
+/* landing */
+
+.section-head{
+    margin-bottom: 3%;
+}
+
+
+/* first section */
+#first-section-landing{ 
+    background-image: url('../landing_img/background_landing.jpg'); 
+    background-size: cover;
+    height: 100vh;
+    /* width: 100vw; */
+    z-index: 1;
+    
+}
+#first-section-landing:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.65;
+    z-index: 2;
+}
+
+#first-section-landing-content{
+    position: relative; 
+    color: white;  
+    padding-top: 25vh;
+    z-index: 3;
+    /* height:auto */
+}
+
+/* second section */
+#second-section-landing{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.second-section-landing-item{
+    margin-bottom: 2%;
+}
+
+.hidden-text{
+    display: none;
+}
+
+/* third section*/
+#third-section-landing{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
 }

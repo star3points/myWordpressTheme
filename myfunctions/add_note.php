@@ -3,7 +3,7 @@
 add_action( 'wp_enqueue_scripts', 'myajax_data', 99 );
 function myajax_data(){
     
-	wp_localize_script('myjs', 'myajax', 
+	wp_localize_script('validate_note_form', 'myajax', 
 		array(
 			'url' => admin_url('admin-ajax.php')
 		)
@@ -22,6 +22,7 @@ function add_new_note(){
     echo json_encode($response);
     if($response['res']){
         insert_note_in_db($data);
+        //header("Refresh: 0");
     }
     wp_die();
 }

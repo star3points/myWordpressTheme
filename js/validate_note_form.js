@@ -41,6 +41,7 @@ jQuery(document).ready(function($) {
                     $('#input_note_title_id').removeClass('is-valid');
                     $('#input_note_content_id').removeClass('is-valid');
                     $('#input_note_password_id').removeClass('is-valid');
+                    
                 }
             }
 
