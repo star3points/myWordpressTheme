@@ -41,4 +41,7 @@ require('myfunctions/include_template_subcategory_notes.php');
 
 require('myfunctions/add_note.php');
 
+//update note page after add_note
+require('myfunctions/notes_get_posts.php');
+
 ?>

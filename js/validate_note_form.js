@@ -36,11 +36,24 @@ jQuery(document).ready(function($) {
                     : $('#input_note_password_id').removeClass('is-valid').addClass('is-invalid');
                     
                 } else {
-                    
                     $('.add_new_note').trigger('reset');
                     $('#input_note_title_id').removeClass('is-valid');
                     $('#input_note_content_id').removeClass('is-valid');
                     $('#input_note_password_id').removeClass('is-valid');
+                    $('#category-notes-content').empty();
+                    $.ajax({
+                        url: myajax.url,
+                        data : {
+                            action: 'notes_get_posts'},
+                        method: "POST",
+                        success: function(response){
+                            alert('done!');
+                            $('#category-notes-content').html(response);
+
+                        }
+
+
+                    });
                     
                 }
             }

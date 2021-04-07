@@ -20,6 +20,7 @@ get_header();
                             <div class = "form-group">
                                 <select class = "form-control" name = "db_id_category">
                                     <option value = "10">Other notes</option>
+                                    <option value = "12">Notes with code and documentation</option>
                                     <option value = "9">Notes with lectures</option>
                                     <option value = "7">Notes with art galleries and platforms</option>
                                     <option value = "8">Notes with books</option>
@@ -42,6 +43,7 @@ get_header();
         </div>
 
 
+        <div id = "category-notes-content">
         <?php 
         while(have_posts()):
             the_post();?>
@@ -52,6 +54,7 @@ get_header();
                 </div>
             </div>
         <?php endwhile; ?>
+        </div>
     </div>
 
     <div class = "col-4">

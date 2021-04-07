@@ -15,16 +15,19 @@
     <div class = "container-fluid">
         <div id = "first-section-landing-content" class = "row justify-content-center ">
             <!-- <style> background-image: url('/landing_img/background_landing.jpg');</style> -->
-            <div class = "col-4 ">
-                <h4>text text text</h4>
+            <div class = "col-5">
+                <h4>Junior PHP разработчик</h4>
                 <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                Добрый день. Меня зовут Сергей и я ищу работу web разработчика. Буду рад работать и развиваться в вашей компании.
                 </p>
             </div>
-            <div class = "col-4">
-                <h4>text text text</h4>
+            <div class = "col-3">
+                <h4>Инструменты</h4>
                 <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                PHP, MySQL<br>
+                HTML, CSS, Bootstrap<br>
+                Javascript, jQuery<br>
+                Wordpress, Bitrix<br>
                 </p>
             </div>
         </div>
@@ -48,7 +51,12 @@
                 <div class = "block-with-hidden-text">
                     <span class = "togler text-primary">More</span>
                     <p class = "hidden-text">
-                        Description
+                        Простейший сайт (блог) на php. Реализация паттерна MVC.
+                        Статьи хранятся в виде отдельных html файлов (что, как я понимаю, не правильно).
+                        В базе 2 таблицы: таблица пользователей и комментариев.
+                        Пользователь может зарегистрироваться, авторизоваться.
+                        Авторизованный пользователь может комментировать статьи и удалять свои комментарии.
+                        <br><a href = "https://github.com/star3points/MampBlog">Код</a>
                     </p>
                 </div>
             </div>
@@ -62,7 +70,14 @@
                 <div class = "block-with-hidden-text">
                     <span class = "togler text-primary">More</span>
                     <p class = "hidden-text">
-                        Description
+                        Для вывода информации из инфоблоков и навигации использовал компоненты:
+                        menu<br>
+                        main.include<br>
+                        news.list 
+                        news.detail<br>
+                        catalog.section 
+                        catalog.section.list
+                        <br><a href = "https://github.com/star3points/MyPetBitrix">Код</a>
                     </p>
                 </div>
             </div>
@@ -76,7 +91,9 @@
                 <div class = "block-with-hidden-text">
                     <span class = "togler text-primary">More</span>
                     <p class = "hidden-text">
-                        Description
+                        Этот сайт. 
+                        Помимо вывода записей реализовано добавление записей(notes) через web интерфейс, AJAX валидация формы добавления записи.
+                        <br><a href = "https://github.com/star3points/myWordpressTheme">Код</a>
                     </p>
                 </div>
             </div>

@@ -22,7 +22,6 @@ function add_new_note(){
     echo json_encode($response);
     if($response['res']){
         insert_note_in_db($data);
-        //header("Refresh: 0");
     }
     wp_die();
 }
@@ -62,5 +61,3 @@ function insert_note_in_db($data){
     ];
     $post_id = wp_insert_post( $post_data );
 }
-
-?>
